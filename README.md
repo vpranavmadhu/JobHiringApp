@@ -14,9 +14,9 @@ nextHire is a full-stack web application that connects job seekers and employers
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: ReactJS, React Router, CSS
-- **Backend**: Spring Boot, Spring Security, Hibernate
-- **Database**: MySQL / MongoDB (depending on your setup)
+- **Frontend**: ReactJS Vite, React Router, CSS
+- **Backend**: Spring Boot
+- **Database**: Mongo DB
 - **Other**: JWT for authentication, REST APIs
 
 ## 📸 Screenshot
