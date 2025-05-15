@@ -1,0 +1,724 @@
+.login-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+.login-card {
+    background-color: rgb(114, 114, 229);
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-card h1 {
+    margin-top: 15px;
+    align-self: center;
+    font-size: xx-large;
+    color: aliceblue;
+
+}
+
+.login-card form {
+
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    justify-content: center;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    align-self: center;
+}
+
+.login-card form input {
+    height: 30px;
+    background-color: aliceblue;
+    border: none;
+    color: rgb(41, 41, 41);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.login-card a {
+    color: aliceblue;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.register-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+.register-card {
+    background-color: rgb(114, 114, 229);
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-card h1 {
+    margin-top: 15px;
+    align-self: center;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.register-card form {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    justify-content: center;
+}
+
+.register-card form input {
+    height: 30px;
+    background-color: aliceblue;
+    border: none;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.register-card select {
+    height: 30px;
+    background-color: rgb(231, 231, 231);
+    color: rgb(50, 50, 50);
+    text-align: center;
+}
+
+.register-card a {
+    color: aliceblue;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.admin-main {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.admin-sub {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    background-color: rgb(114, 114, 229);
+    border-radius: 5px;
+}
+
+.admin-sub:hover {
+    background-color: rgb(102, 102, 234);
+    transform: scale(1.2);
+
+}
+
+.home-main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    /* To avoid overlap with the fixed header */
+
+}
+
+.home-header {
+    width: 100%;
+    height: 80px;
+    background-color: #0056b3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* Ensure it's above other content */
+    box-shadow: 0 0 5px gray;
+}
+
+.home-content {
+    flex: 1;
+    display: flex;
+    max-width: 100%;
+    /* padding-left: 1rem; */
+
+
+}
+
+.home-footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(227, 234, 240);
+    box-shadow: 0 0 5px gray;
+    align-self: self-end;
+}
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%;
+
+}
+
+.header-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(105, 29, 236);
+}
+
+.header-logo:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.header-profile {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-dropdown {
+    background-color: #535bf2;;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: relative;
+}
+
+.profile-dropdown:hover {
+    transform: scale(1.1);
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+  }
+  
+  .caret {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .caret.rotated {
+    transform: rotate(180deg); /* caret flips when dropdown is open */
+  }
+
+.profile-button:hover {
+    cursor: pointer;
+    color: aliceblue !important;
+}
+
+.profile-button img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.dropdown-menu {
+    /* width: 60px;
+    height: 100px; */
+    position: absolute;
+    top: 100%;
+    /* places it below the profile-button */
+    right: 10px;
+    /* aligns it to the right */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.search-container input {
+    width: 400px;
+    height: 30px;
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding-left: 32px; /* Space for icon */
+}
+
+.search-icon {
+    position: absolute;
+    left: 29%;
+    top: 31px;
+    width: 16px;
+    height: 16px;
+    fill: #8C8594;
+    pointer-events: none;
+}
+
+
+.go-back-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 12px;
+    margin-top: 12px;
+    color: black !important;
+    background-color: rgb(182, 179, 179) !important;
+}
+
+.go-back-btn :hover {
+
+    background-color: rgb(104, 102, 102);
+}
+
+.job-main {
+    height: 100%;
+    width: 100%;
+}
+
+.jobcard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    height: 80%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    column-gap: 0;
+    margin-left: 2rem;
+
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    padding: 5px;
+
+
+}
+
+.job-card a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 4px;
+    font-size: small;
+    color: #277dd8;
+
+}
+
+.job-card a:hover {
+    cursor: pointer;
+}
+
+.job-card:hover {
+    transform: scale(1.1);
+}
+
+.job-disabled {
+    background-color: #f2f2f2;
+    color: #888;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
+  .job-disabled h3,
+  .job-disabled p,
+  .job-disabled h5 {
+    color: #aaa;
+  }
+  .job-disabled a {
+    color: red;
+  }
+
+.admin-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    background-color: aliceblue;
+}
+
+.addjob-card {
+    background-color: rgb(114, 114, 229);
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 50px;
+    padding: 6px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.card-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.card-content button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: #2f7dd1;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radio-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-options label {
+    color: white !important;
+}
+
+.radio-options input {
+    color: blue !important;
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    padding: 60px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-right: 15px;
+    color: #00ABE4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.no-job-message {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    font-size: xx-large;
+}
+
+/* .jobapply-main {
+    background-color: aliceblue;
+    min-width: 100%;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.jobapply-company {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.jobapply-jd {
+    
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+} */
+
+/* Main Layout */
+.jobapply-main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Company Section */
+.jobapply-company {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.jobapply-company h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.jobapply-company h3 {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.jobapply-company a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.jobapply-company a:hover {
+  text-decoration: underline;
+}
+
+/* Job Description Section */
+.jobapply-jd {
+  padding: 20px;
+}
+
+.jobapply-jd h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.jobapply-jd h3 {
+  font-size: 1.3rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.jobapply-jd p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.jobapply-jd ol {
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.jobapply-jd li {
+  margin-bottom: 8px;
+}
+
+/* Apply Button */
+.apply-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #2980b9;
+}
+
+
+/* Go Back Button */
+.go-back-button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 12px 20px;
+  background-color: #e74c3c; /* Red color for the go back button */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+  background-color: #c0392b;
+}
+
+.adminjobhome-content {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+/* Style for each job card */
+.adminjobcard-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Style for the buttons inside each card */
+.adminjobcard-card-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Style for each button inside the card */
+.adminjobcard-card-buttons button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adminjobcard-card-buttons button:hover {
+    transform: scale(1.05);
+}
+
+/* Specific button styles */
+.adminjobcard-card-buttons button:nth-child(1) {
+  background: #e74c3c;
+  color: white;
+}
+
+.adminjobcard-card-buttons button:nth-child(2) {
+  background: #f1c40f;
+  color: black;
+}
+
+.adminjobcard-card-buttons button:nth-child(3) {
+  background: #3498db;
+  color: white;
+}
+
+.adminjobcard-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
