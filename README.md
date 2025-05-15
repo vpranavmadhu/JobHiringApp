@@ -25,8 +25,7 @@ nextHire is a full-stack web application that connects job seekers and employers
 
 ## 🚀 How to Run the Project
 
-### Backend Setup
-
-1. Navigate to the backend folder:
+1. Clone the repository:
    ```bash
-   cd backend
+   git clone https://github.com/vpranavmadhu/taskbuddy-app.git
+
