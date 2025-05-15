@@ -21,7 +21,9 @@ nextHire is a full-stack web application that connects job seekers and employers
 
 ## 📸 Screenshot
 
-*(Add screenshots of your app here if available)*
+![Screenshot 2025-05-15 150120](https://github.com/user-attachments/assets/a71aa445-36b8-40bc-889b-dae31cabb381)
+![Screenshot 2025-05-15 150144](https://github.com/user-attachments/assets/c39a82fc-fe84-4b6a-94ea-b2ab3711c233)
+
 
 ## 🚀 How to Run the Project
 
